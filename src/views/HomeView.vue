@@ -1,17 +1,25 @@
 <template lang="">
-    <div>
-        <services/>
-    </div>
+  <div>
+    <hero-section />
+    <certified-section />
+    <services />
+    <about-us-section />
+  </div>
 </template>
 <script>
-import services from '@/components/services.vue';
+import services from '@/components/services.vue'
+import certifiedSection from '@/components/certified-section.vue'
+import aboutUsSection from '@/components/about-us.vue'
+import heroSection from '../components/hero-section.vue'
+
 export default {
-    name: "HomePage",
-    components: {
-        services
-    }
+  name: 'HomePage',
+  components: {
+    services,
+    certifiedSection,
+    aboutUsSection,
+    heroSection
+  }
 }
 </script>
-<style lang="">
-    
-</style>
+<style lang=""></style>
