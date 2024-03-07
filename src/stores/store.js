@@ -8,7 +8,8 @@ export const useStore = defineStore('store', {
     serviceData: [],
     footerData: [],
     certifiedData: [],
-    aboutData: []
+    aboutData: [],
+    productData:[]
   }),
   actions: {
     async getHeroData() {
@@ -52,6 +53,15 @@ export const useStore = defineStore('store', {
         const tab = 'about_us'
         const result = await getData(tab)
         this.aboutData = result
+      } catch (error) {
+        console.error(error)
+      }
+    },
+    async getProducData(productName) {
+      try {
+        const tab = productName
+        const result = await getData(tab)
+        this.productData = result
       } catch (error) {
         console.error(error)
       }
