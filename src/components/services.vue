@@ -1,5 +1,5 @@
 <template>
-  <section class="py-6" id="contact_us">
+  <section id="services" class="py-6">
     <div
       class="md:container lg:container xl:container flex flex-col items-center justify-center p-4 mx-auto sm:p-10"
     >

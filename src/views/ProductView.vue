@@ -33,6 +33,7 @@ export default {
 
     onMounted(async () => {
       await store.getProducData(productName.value)
+
       filteredProductCatalogue.value = productData.value
         .filter((item) => item.catalogue !== null)
         .map((item, index) => ({

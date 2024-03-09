@@ -62,7 +62,9 @@
                           {{ dropdown.name }}
                           <template v-if="dropdown.name !== 'Other Brands'">
                             <span
-                              :style="{ backgroundImage: `url('${dropdown.bg}')` }"
+                              :style="{
+                                backgroundImage: `url('https://shafieramli.com/megcom-dynamic/images/${dropdown.bg}')`
+                              }"
                               :class="{
                                 'absolute inset-0 bg-cover opacity-0 hover:opacity-20  group-hover:grayscale': true,
                                 'bg-top':
@@ -202,33 +204,33 @@ export default {
     const products = [
       {
         name: 'Schneider Electric',
-        href: '#',
-        bg: 'src/assets/images/schneider-electric-logo.png'
+        href: '/product/schneider-electric',
+        bg: 'schneider-electric-logo.png'
       },
       {
         name: 'ABB',
-        href: '#',
-        bg: 'src/assets/images/abb-logo.png'
+        href: '/product/asea-brown-broveri',
+        bg: 'abb-logo.png'
       },
       {
         name: 'Danfoss',
-        href: '#',
-        bg: 'src/assets/images/danfoss-logo.png'
+        href: '/product/danfoss',
+        bg: 'danfoss-logo.png'
       },
       {
         name: 'Emotron',
-        href: '#',
-        bg: 'src/assets/images/emotron-logo.png'
+        href: '/product/emotron',
+        bg: 'emotron-logo.png'
       },
       {
         name: 'Vacon',
-        href: '#',
-        bg: 'src/assets/images/vacon-logo.png'
+        href: '/product/vacon',
+        bg: 'vacon-logo.png'
       },
       {
         name: 'Other Brands',
-        href: '#',
-        bg: 'src/assets/images/schneider-electric-logo.png'
+        href: '/product/other-brands',
+        bg: null
       }
     ]
 
@@ -236,7 +238,7 @@ export default {
       {
         name: 'Home',
         href: '/',
-        type: 'page'
+        type: 'section'
       },
 
       {
@@ -248,18 +250,18 @@ export default {
 
       {
         name: 'Services',
-        href: '/services',
-        type: 'page'
+        href: '#services',
+        type: 'section'
       },
       {
         name: 'About Us',
-        href: '/about-us',
-        type: 'page'
+        href: '#about-us',
+        type: 'section'
       },
       {
         name: 'Contact Us',
-        href: '/contact-us',
-        type: 'page'
+        href: '#contact-us',
+        type: 'section'
       },
       {
         name: 'Gallery',
@@ -270,10 +272,22 @@ export default {
 
     const mobileMenuOpen = ref(false)
 
+    // const scrollToSection = (hash) => {
+    //   const element = document.querySelector(hash)
+    //   if (element) {
+    //     const top = element.getBoundingClientRect().top + window.pageYOffset
+    //     window.scrollTo({
+    //       top: top,
+    //       behavior: 'smooth'
+    //     })
+    //   }
+    // }
+
     return {
       products,
       mobileMenuOpen,
       navigations
+      // scrollToSection
     }
   }
 }
