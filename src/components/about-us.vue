@@ -1,6 +1,6 @@
 <template lang="">
   <section id="about-us" class="py-6">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-6 py-6 lg:px-8">
       <p
         class="text-base font-semibold leading-7 text-red-600 mb-6 text-center lg:hidden xl:hidden"
       >
@@ -11,11 +11,6 @@
       >
         <div class="relative lg:mr-8 rounded-3xl overflow-hidden">
           <div class="relative rounded-3xl bg-transparent overflow-hidden">
-            <!-- <img
-                class="inset-0 h-full w-full object-cover brightness-125 saturate-0"
-                src="https://shafieramli.com/megcom-dynamic/images/about-bg.jpg"
-                alt=""
-              /> -->
             <img
               class="h-full w-full object-cover brightness-125"
               src="https://shafieramli.com/megcom-dynamic/images/about-bg.jpg"
