@@ -1,5 +1,5 @@
 <template lang="">
-  <section class="py-6 px-8 mx-auto md:px-14 lg:px-16 lg:w-4/5 w-full">
+  <section id="certified" class="py-6 px-8 mx-auto md:px-14 lg:px-16 lg:w-4/5 w-full">
     <p class="px-2 py-4 text-sm font-medium tracki text-white text-center uppercase">
       We are Certified by
     </p>
